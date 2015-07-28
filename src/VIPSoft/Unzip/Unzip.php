@@ -141,7 +141,8 @@ class Unzip
             return $filename;
         }
 
-        throw new \Exception('Invalid filename path in zip archive');
+        # Instead of throwing an exception, just ignore the file that is bad
+        #throw new \Exception('Invalid filename path in zip archive');
     }
 
     /**
